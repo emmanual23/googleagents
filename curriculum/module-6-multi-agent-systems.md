@@ -1,4 +1,4 @@
-# Module 5: Multi-Agent Systems
+# Module 6: Multi-Agent Systems
 
 **Time estimate:** 1 week
 **Goal:** Build systems where multiple specialized agents collaborate to solve complex tasks.
@@ -15,7 +15,7 @@ By the end of this module you will:
 
 ---
 
-## Unit 5.1: Why Multi-Agent?
+## Unit 6.1: Why Multi-Agent?
 
 ### Readings
 
@@ -37,7 +37,7 @@ By the end of this module you will:
 
 ---
 
-## Unit 5.2: Orchestration Patterns
+## Unit 6.2: Orchestration Patterns
 
 ### Readings
 
@@ -90,7 +90,7 @@ Agents argue and refine until consensus. Improves quality on hard problems.
 
 ---
 
-## Unit 5.3: Model Context Protocol (MCP)
+## Unit 6.3: Model Context Protocol (MCP)
 
 MCP is an open standard (created by Anthropic) for connecting LLMs to external tools and data sources.
 
@@ -115,7 +115,7 @@ MCP is an open standard (created by Anthropic) for connecting LLMs to external t
 
 ---
 
-## Unit 5.4: Agent-to-Agent Protocol (A2A)
+## Unit 6.4: Agent-to-Agent Protocol (A2A)
 
 A2A is an open standard (created by Google, donated to Linux Foundation) for agents to communicate with each other.
 
@@ -138,7 +138,7 @@ A2A is an open standard (created by Google, donated to Linux Foundation) for age
 
 ---
 
-## Unit 5.5: Build a Multi-Agent System
+## Unit 6.5: Build a Multi-Agent System
 
 ### Build Exercise
 
@@ -160,9 +160,9 @@ Build a **code review team** with 3 agents:
 
 ---
 
-## Unit 5.6: Agent Communication Patterns
+## Unit 6.6: Agent Communication Patterns
 
-The orchestration patterns in Unit 5.2 describe *workflow shapes*. This unit covers the underlying *communication mechanisms* agents use to exchange information.
+The orchestration patterns in Unit 6.2 describe *workflow shapes*. This unit covers the underlying *communication mechanisms* agents use to exchange information.
 
 ### Patterns
 
@@ -180,12 +180,12 @@ The orchestration patterns in Unit 5.2 describe *workflow shapes*. This unit cov
 
 ### Exercises
 
-- [ ] Identify which communication pattern your Module 5 code review team uses (most likely shared state). Redesign it as message passing — each agent sends a structured message `{"from": "reviewer", "type": "feedback", "content": "..."}` to the next agent.
+- [ ] Identify which communication pattern your Module 6 code review team uses (most likely shared state). Redesign it as message passing — each agent sends a structured message `{"from": "reviewer", "type": "feedback", "content": "..."}` to the next agent.
 - [ ] Design (on paper) a blackboard-based system: 3 analyst agents each post research findings to a shared board. A synthesizer agent reads the board and produces a combined report. What data structure would the blackboard use?
 
 ---
 
-## Checkpoint: Module 5
+## Checkpoint: Module 6
 
 - [ ] You can explain 5 multi-agent orchestration patterns and when to use each
 - [ ] You can explain 4 agent communication patterns and their tradeoffs

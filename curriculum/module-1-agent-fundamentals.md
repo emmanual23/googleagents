@@ -122,7 +122,7 @@ Build a ReAct agent in ~200 lines of Python with **no frameworks**. Use any LLM 
 
 2. **Optional (advanced):** The Rise and Potential of Large Language Model Based Agents: A Survey
    - Xi et al., 2023 — [arxiv.org/abs/2309.07864](https://arxiv.org/abs/2309.07864)
-   - 86-page survey. Useful reference for later modules, but not required now. Revisit when you reach Module 5 (multi-agent systems).
+   - 86-page survey. Useful reference for later modules, but not required now. Revisit when you reach Module 6 (multi-agent systems).
 
 ### Key Architecture Patterns to Understand
 

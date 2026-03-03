@@ -1,4 +1,4 @@
-# Module 7: Production & Deployment
+# Module 8: Production & Deployment
 
 **Time estimate:** 1-2 weeks
 **Goal:** Take an agent from notebook to production — with streaming, observability, security, cost control, versioning, and deployment.
@@ -19,7 +19,7 @@ By the end of this module you will:
 
 ---
 
-## Unit 7.1: Prerequisite Primer
+## Unit 8.1: Prerequisite Primer
 
 > This unit brings you up to speed on practical skills needed for production work. Skim if you already know these topics.
 
@@ -50,11 +50,11 @@ Agents in production are async — you don't want to block a web server while wa
 
 **Resource:** [Docker — Getting Started Guide](https://docs.docker.com/get-started/)
 
-You'll need Docker for sandboxed code execution (Module 8) and containerized deployment. If you've never used Docker, work through the official getting started guide.
+You'll need Docker for sandboxed code execution (Module 9) and containerized deployment. If you've never used Docker, work through the official getting started guide.
 
 ---
 
-## Unit 7.2: Observability & Tracing
+## Unit 8.2: Observability & Tracing
 
 In production, you need to see exactly what your agent did, why, and how long each step took.
 
@@ -77,13 +77,13 @@ In production, you need to see exactly what your agent did, why, and how long ea
 
 ### Exercises
 
-- [ ] Integrate Langfuse into your Module 5 multi-agent system. View traces in the Langfuse UI (use the free cloud tier or self-host).
+- [ ] Integrate Langfuse into your Module 6 multi-agent system. View traces in the Langfuse UI (use the free cloud tier or self-host).
 - [ ] Add custom metadata to your traces: user ID, session ID, agent version, question category.
 - [ ] Build a cost dashboard: track tokens used and estimated cost per agent run over 50 test queries.
 
 ---
 
-## Unit 7.3: Error Handling & Resilience
+## Unit 8.3: Error Handling & Resilience
 
 Agents in production face: API rate limits, network failures, malformed tool responses, LLM refusals, infinite loops, and context window overflow.
 
@@ -127,7 +127,7 @@ tokens = enc.encode(text)
 
 ---
 
-## Unit 7.4: Streaming Responses
+## Unit 8.4: Streaming Responses
 
 Agents that take 10+ seconds for multi-step reasoning need streaming — users must see progress in real time, not stare at a blank screen.
 
@@ -167,7 +167,7 @@ Each provider supports streaming with tool use:
 
 ---
 
-## Unit 7.5: Cost Control
+## Unit 8.5: Cost Control
 
 Agents are expensive. A single complex query can make 10+ LLM calls.
 
@@ -191,7 +191,7 @@ Agents are expensive. A single complex query can make 10+ LLM calls.
 
 ---
 
-## Unit 7.6: Security — Prompt Injection & Guardrails
+## Unit 8.6: Security — Prompt Injection & Guardrails
 
 Prompt injection is the #1 security threat to agents. An agent that processes external data (web pages, emails, documents, tool results) is vulnerable to injected instructions.
 
@@ -248,7 +248,7 @@ Prompt injection is the #1 security threat to agents. An agent that processes ex
 
 ---
 
-## Unit 7.7: Prompt & Agent Versioning
+## Unit 8.7: Prompt & Agent Versioning
 
 In production, system prompts are as important as code. A prompt change can completely alter agent behavior — you need version control.
 
@@ -284,12 +284,12 @@ dev (experiment freely) → staging (run eval suite) → production (if evals pa
 ### Exercises
 
 - [ ] Set up Langfuse prompt management (free tier). Create 3 versions of your agent's system prompt. Deploy version 1 to "production" and version 3 to "dev".
-- [ ] Build a simple promotion check: run your eval harness (Module 6) against a new prompt version. Only promote if correctness score > 80%.
+- [ ] Build a simple promotion check: run your eval harness (Module 7) against a new prompt version. Only promote if correctness score > 80%.
 - [ ] Add prompt version to your trace metadata so you can correlate quality metrics with specific prompt versions.
 
 ---
 
-## Unit 7.8: Deployment
+## Unit 8.8: Deployment
 
 ### Build Exercise
 
@@ -323,7 +323,7 @@ Deploy your best agent as a REST API:
 
 ---
 
-## Checkpoint: Module 7
+## Checkpoint: Module 8
 
 - [ ] Your agent has tracing via Langfuse (or LangSmith)
 - [ ] You've implemented error handling for at least 5 failure modes including token overflow

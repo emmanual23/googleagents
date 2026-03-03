@@ -1,4 +1,4 @@
-# Module 3: Agent Frameworks
+# Module 4: Agent Frameworks
 
 **Time estimate:** 1-2 weeks
 **Goal:** Learn the major agent frameworks, rebuild your agent in each, and understand when to use which.
@@ -15,7 +15,7 @@ By the end of this module you will:
 
 ---
 
-## Unit 3.1: LangGraph
+## Unit 4.1: LangGraph
 
 The most popular framework for building stateful, graph-based agent workflows. From the LangChain team.
 
@@ -43,7 +43,7 @@ The most popular framework for building stateful, graph-based agent workflows. F
 
 ---
 
-## Unit 3.2: CrewAI
+## Unit 4.2: CrewAI
 
 A role-based multi-agent framework. You define agents with roles, goals, and backstories, then organize them into crews.
 
@@ -70,7 +70,7 @@ A role-based multi-agent framework. You define agents with roles, goals, and bac
 
 ---
 
-## Unit 3.3: Hugging Face smolagents
+## Unit 4.3: Hugging Face smolagents
 
 A minimal (~1000 lines of code), code-first agent library. Agents write Python code as their actions instead of calling named tools.
 
@@ -94,7 +94,7 @@ A minimal (~1000 lines of code), code-first agent library. Agents write Python c
 
 ---
 
-## Unit 3.4: Provider SDKs (OpenAI Agents SDK, Anthropic Agent SDK)
+## Unit 4.4: Provider SDKs (OpenAI Agents SDK, Anthropic Agent SDK)
 
 Each major provider now offers their own agent SDK.
 
@@ -117,7 +117,7 @@ Each major provider now offers their own agent SDK.
 
 ---
 
-## Unit 3.5: Open-Source & Local Models
+## Unit 4.5: Open-Source & Local Models
 
 Agent frameworks aren't locked to commercial APIs. You can run agents with open-source models locally.
 
@@ -139,7 +139,7 @@ Most agent frameworks (LangGraph, CrewAI, smolagents) support OpenAI-compatible 
 
 ---
 
-## Unit 3.6: Framework Comparison
+## Unit 4.6: Framework Comparison
 
 ### Decision Matrix
 
@@ -161,7 +161,7 @@ Most agent frameworks (LangGraph, CrewAI, smolagents) support OpenAI-compatible 
 
 ---
 
-## Checkpoint: Module 3
+## Checkpoint: Module 4
 
 - [ ] You've built agents in at least LangGraph + CrewAI + one provider SDK
 - [ ] You can articulate the tradeoffs between frameworks

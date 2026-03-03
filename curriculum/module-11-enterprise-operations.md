@@ -1,4 +1,4 @@
-# Module 10: Enterprise Operations & Governance
+# Module 11: Enterprise Operations & Governance
 
 **Time estimate:** 1-2 weeks
 **Goal:** Master the operational side of deploying agents in large enterprises — security, compliance, cloud architectures, evaluation at scale, multi-tenancy, prompt management, and regulated industry deployment.
@@ -20,7 +20,7 @@ By the end of this module you will:
 
 ---
 
-## Unit 10.1: Security & Access Control
+## Unit 11.1: Security & Access Control
 
 When agents access enterprise data, every security concern is amplified — agents can exfiltrate data faster, cross permission boundaries, and take actions at scale.
 
@@ -49,12 +49,12 @@ When agents access enterprise data, every security concern is amplified — agen
 
 ### Exercises
 
-- [ ] Take your Module 9 RAG agent and add: (a) PII detection and masking in retrieved documents (use regex for emails/phones, or a library like `presidio`), (b) audit logging of every retrieval with user ID, timestamp, and document accessed, (c) a permission check that prevents the agent from returning documents the user shouldn't see.
+- [ ] Take your Module 10 RAG agent and add: (a) PII detection and masking in retrieved documents (use regex for emails/phones, or a library like `presidio`), (b) audit logging of every retrieval with user ID, timestamp, and document accessed, (c) a permission check that prevents the agent from returning documents the user shouldn't see.
 - [ ] Read the Auth0 article. How should an agent authenticate to enterprise systems? Why is "one API key for the agent" a bad pattern? Write a 1-paragraph answer.
 
 ---
 
-## Unit 10.2: Governance & Compliance
+## Unit 11.2: Governance & Compliance
 
 ### Readings
 
@@ -81,7 +81,7 @@ When agents access enterprise data, every security concern is amplified — agen
 
 ---
 
-## Unit 10.3: Cloud Reference Architectures
+## Unit 11.3: Cloud Reference Architectures
 
 Every major cloud provider has published enterprise agent reference architectures.
 
@@ -99,11 +99,11 @@ Every major cloud provider has published enterprise agent reference architecture
 ### Exercises
 
 - [ ] Read all 3 reference architectures. Create a comparison table: how does each cloud handle identity, data access, observability, and multi-agent orchestration?
-- [ ] Pick the cloud your target enterprise uses. Map your Module 7 deployed agent to that cloud's reference architecture. Identify 3 gaps you'd need to close for production deployment.
+- [ ] Pick the cloud your target enterprise uses. Map your Module 8 deployed agent to that cloud's reference architecture. Identify 3 gaps you'd need to close for production deployment.
 
 ---
 
-## Unit 10.4: Enterprise Evaluation & Data Flywheel
+## Unit 11.4: Enterprise Evaluation & Data Flywheel
 
 At enterprise scale, evaluation is a continuous flywheel — agent interactions generate data that improves the agent.
 
@@ -156,7 +156,7 @@ Deploy Agent → Users Interact → Collect Traces & Feedback
 
 ---
 
-## Unit 10.5: Multi-Tenant Agent Architectures
+## Unit 11.5: Multi-Tenant Agent Architectures
 
 Enterprises need one agent system to serve multiple departments, business units, or customers.
 
@@ -178,12 +178,12 @@ Enterprises need one agent system to serve multiple departments, business units,
 
 ### Exercises
 
-- [ ] Take your Module 9 enterprise RAG agent and make it multi-tenant: add a `tenant_id` to every document at indexing time. At query time, filter to only the user's tenant. Verify that tenant A cannot see tenant B's data.
+- [ ] Take your Module 10 enterprise RAG agent and make it multi-tenant: add a `tenant_id` to every document at indexing time. At query time, filter to only the user's tenant. Verify that tenant A cannot see tenant B's data.
 - [ ] Design a cost allocation model: if 3 departments share one agent system, how do you attribute costs per department? Consider: LLM tokens, vector DB storage, compute, and support.
 
 ---
 
-## Unit 10.6: Prompt Management at Scale
+## Unit 11.6: Prompt Management at Scale
 
 In enterprise deployments, prompt changes are as impactful as code changes and need the same rigor.
 
@@ -215,7 +215,7 @@ In enterprise deployments, prompt changes are as impactful as code changes and n
 
 ---
 
-## Unit 10.7: Case Studies & Lessons Learned
+## Unit 11.7: Case Studies & Lessons Learned
 
 ### Readings
 
@@ -234,7 +234,7 @@ In enterprise deployments, prompt changes are as impactful as code changes and n
 
 ---
 
-## Unit 10.8: Deploying Agents in Regulated Industries
+## Unit 11.8: Deploying Agents in Regulated Industries
 
 Regulated industries — financial services, healthcare, insurance, legal, government, energy — face additional constraints that go beyond general enterprise governance. Agents in these contexts must satisfy domain-specific regulations, explainability mandates, and audit requirements that fundamentally shape the architecture. This unit covers the regulatory landscape, industry-specific deployment patterns, and technical approaches required for compliant agent deployment.
 
@@ -415,13 +415,13 @@ Across all regulated industries, several common architectural patterns emerge:
 
 - [ ] **Regulatory mapping:** Pick a regulated industry (financial services, healthcare, or insurance). Create a compliance matrix: list every regulation that applies, what it requires of an AI agent, and how you would implement each requirement technically.
 - [ ] **Architecture design:** Design a HIPAA-compliant or FINRA-compliant agent architecture for one of: (a) a clinical decision support agent, (b) a KYC/AML investigation agent, or (c) an insurance claims processing agent. Include: data flow diagram, PHI/PII handling, audit trail, HITL gates, and explainability layer.
-- [ ] **Shadow mode exercise:** Take your Module 9 agent and implement champion-challenger deployment: run a "challenger" prompt version in shadow mode alongside the production version, log both outputs, and compare quality without exposing the challenger to real users.
+- [ ] **Shadow mode exercise:** Take your Module 10 agent and implement champion-challenger deployment: run a "challenger" prompt version in shadow mode alongside the production version, log both outputs, and compare quality without exposing the challenger to real users.
 - [ ] Read the FINRA 2026 report's GenAI section. What are the six agent-specific risks FINRA identifies? How would you mitigate each in your agent architecture?
 - [ ] Read the CFPB Circular 2023-03. Why are standard checkbox adverse action forms insufficient when AI makes lending decisions? What would a compliant explanation look like?
 
 ---
 
-## Checkpoint: Module 10
+## Checkpoint: Module 11
 
 **Deliverable: Enterprise Agent Strategy Document**
 
@@ -435,9 +435,9 @@ Write a 3-5 page strategy document for deploying an AI agent in a hypothetical (
 6. **Evaluation plan** — CLEAR dimensions, test cases, data flywheel design, prompt versioning strategy
 7. **Cost model** — estimated cost per query, monthly budget, optimization strategies (model routing, caching, distillation plan)
 8. **Risks** — top 3 risks and mitigations (reference the Gartner 40% cancellation prediction)
-9. **Regulated industry compliance** (if applicable) — which domain-specific regulations apply, how your architecture satisfies them (reference Unit 10.8)
+9. **Regulated industry compliance** (if applicable) — which domain-specific regulations apply, how your architecture satisfies them (reference Unit 11.8)
 
-**Also implement:** Take your Module 9 agent and add at least 2 enterprise-grade operational features from this module:
+**Also implement:** Take your Module 10 agent and add at least 2 enterprise-grade operational features from this module:
 - PII masking in retrieval results
 - Audit logging
 - Multi-tenancy with tenant isolation
@@ -451,7 +451,7 @@ Ground every recommendation in a source from this module.
 - [ ] Architecture diagram is included
 - [ ] Cost model is quantified
 - [ ] Risks are specific, not generic
-- [ ] Module 9 agent has 2+ enterprise operational features added
+- [ ] Module 10 agent has 2+ enterprise operational features added
 - [ ] You can identify which regulations apply to agent deployment in at least one regulated industry
 - [ ] You understand the champion-challenger deployment pattern and why it's required in regulated contexts
 

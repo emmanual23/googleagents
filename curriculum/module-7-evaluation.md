@@ -1,4 +1,4 @@
-# Module 6: Evaluation & Quality
+# Module 7: Evaluation & Quality
 
 **Time estimate:** 1 week
 **Goal:** Build rigorous evaluation systems for agents — because you can't improve what you can't measure.
@@ -16,7 +16,7 @@ By the end of this module you will:
 
 ---
 
-## Unit 6.1: Why Agent Eval Is Hard
+## Unit 7.1: Why Agent Eval Is Hard
 
 Evaluating agents is fundamentally harder than evaluating LLMs because:
 - **Non-determinism** — same input can produce different tool call sequences
@@ -33,7 +33,7 @@ Evaluating agents is fundamentally harder than evaluating LLMs because:
 
 ---
 
-## Unit 6.2: Evaluation Dimensions
+## Unit 7.2: Evaluation Dimensions
 
 | Dimension | What It Measures | How to Measure |
 |-----------|-----------------|----------------|
@@ -47,7 +47,7 @@ Evaluating agents is fundamentally harder than evaluating LLMs because:
 
 ---
 
-## Unit 6.3: LLM-as-Judge
+## Unit 7.3: LLM-as-Judge
 
 Use a separate LLM to evaluate your agent's outputs. Cheaper and faster than human evaluation, but requires careful prompt design.
 
@@ -90,7 +90,7 @@ Respond in JSON: {"correctness": N, "reasoning": N, "efficiency": N, "explanatio
 
 ---
 
-## Unit 6.4: Agent Benchmarks
+## Unit 7.4: Agent Benchmarks
 
 ### Readings
 
@@ -110,7 +110,7 @@ Respond in JSON: {"correctness": N, "reasoning": N, "efficiency": N, "explanatio
 
 ---
 
-## Unit 6.5: Building an Eval Harness
+## Unit 7.5: Building an Eval Harness
 
 ### Build Exercise
 
@@ -134,7 +134,7 @@ Create a reusable evaluation harness for any agent:
 
 ---
 
-## Unit 6.6: Agent Debugging & Testing
+## Unit 7.6: Agent Debugging & Testing
 
 Evaluation tells you *how good* the agent is. Debugging tells you *why it fails*.
 
@@ -151,12 +151,12 @@ Evaluation tells you *how good* the agent is. Debugging tells you *why it fails*
 ### Exercises
 
 - [ ] **Unit test your tools:** For each tool in your Module 2 agent, write 3 test cases: (a) normal input, (b) edge case, (c) error input. Run them independently of the agent. Fix any bugs.
-- [ ] **Categorize failures:** Run your eval harness from Unit 6.5. For every failure, categorize it: wrong tool selection, wrong arguments, hallucinated facts, infinite loop, or other. Which category is most common?
+- [ ] **Categorize failures:** Run your eval harness from Unit 7.5. For every failure, categorize it: wrong tool selection, wrong arguments, hallucinated facts, infinite loop, or other. Which category is most common?
 - [ ] **Trace replay:** Save a failing trace to JSON. Modify the system prompt. Replay the same conversation up to the failure point and check if the new prompt fixes it.
 
 ---
 
-## Unit 6.7: Human-in-the-Loop
+## Unit 7.7: Human-in-the-Loop
 
 ### Key Patterns
 
@@ -171,13 +171,13 @@ Evaluation tells you *how good* the agent is. Debugging tells you *why it fails*
 
 ### Exercises
 
-- [ ] **Approval gate:** Add to your LangGraph agent from Module 3: before any tool call that modifies state, pause and ask the user to approve.
+- [ ] **Approval gate:** Add to your LangGraph agent from Module 4: before any tool call that modifies state, pause and ask the user to approve.
 - [ ] **Correction flow:** When the agent gives a wrong answer, allow the user to type a correction. The agent must acknowledge the correction, update its reasoning, and continue. Test: give the agent a question, let it answer wrong, correct it, and verify it adjusts.
 - [ ] **Escalation:** Add confidence estimation: after each answer, the agent rates its confidence (1-5). If confidence < 3, it automatically escalates to the user with "I'm not sure about this — here's what I found, but please verify."
 
 ---
 
-## Checkpoint: Module 6
+## Checkpoint: Module 7
 
 - [ ] You have a working eval harness with 20+ test cases and LLM-as-judge scoring
 - [ ] You can explain why agent eval is harder than LLM eval

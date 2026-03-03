@@ -1,4 +1,4 @@
-# Module 9: Enterprise Data & Knowledge Architecture
+# Module 10: Enterprise Data & Knowledge Architecture
 
 **Time estimate:** 1 week
 **Goal:** Understand how large enterprises structure data to feed AI agents — data architecture, enterprise RAG, knowledge graphs, and open-source/local model options.
@@ -16,7 +16,7 @@ By the end of this module you will:
 
 ---
 
-## Unit 9.1: The Enterprise Data Problem
+## Unit 10.1: The Enterprise Data Problem
 
 Agents are only as good as the data they can access. In enterprises, data is fragmented across dozens of systems, often dirty, poorly documented, and locked behind inconsistent access controls.
 
@@ -51,7 +51,7 @@ Agents are only as good as the data they can access. In enterprises, data is fra
 
 ---
 
-## Unit 9.2: Data Architecture for Agents
+## Unit 10.2: Data Architecture for Agents
 
 ### Readings
 
@@ -83,7 +83,7 @@ Agents are only as good as the data they can access. In enterprises, data is fra
 
 ---
 
-## Unit 9.3: Enterprise RAG at Scale
+## Unit 10.3: Enterprise RAG at Scale
 
 Scaling RAG from a demo with 10 documents to an enterprise with millions of documents across dozens of systems.
 
@@ -120,7 +120,7 @@ Scaling RAG from a demo with 10 documents to an enterprise with millions of docu
 
 ---
 
-## Unit 9.4: Knowledge Graphs and Structured Data
+## Unit 10.4: Knowledge Graphs and Structured Data
 
 Enterprise data isn't just unstructured text — it includes databases, CRMs, ERPs, and knowledge graphs.
 
@@ -154,7 +154,7 @@ Enterprise data isn't just unstructured text — it includes databases, CRMs, ER
 
 ---
 
-## Unit 9.5: Open-Source & Local Models for Agents
+## Unit 10.5: Open-Source & Local Models for Agents
 
 Enterprise data residency, cost constraints, and air-gapped environments often require running models locally.
 
@@ -188,12 +188,12 @@ Enterprise data residency, cost constraints, and air-gapped environments often r
 ### Exercises
 
 - [ ] Install Ollama and run a 7-8B model locally. Rebuild your Module 1 ReAct agent using the local model. Compare quality vs Claude/GPT on your eval set.
-- [ ] Benchmark: run your Module 6 eval harness on (a) a local 8B model, (b) a local 70B model (if your hardware supports it), (c) Claude Sonnet, (d) GPT-4o. Create a cost vs quality chart.
+- [ ] Benchmark: run your Module 7 eval harness on (a) a local 8B model, (b) a local 70B model (if your hardware supports it), (c) Claude Sonnet, (d) GPT-4o. Create a cost vs quality chart.
 - [ ] Implement model routing with a local model: use the local model for simple tool selection, and the API model for complex reasoning and final answers. Measure cost savings.
 
 ---
 
-## Checkpoint: Module 9
+## Checkpoint: Module 10
 
 **Build an enterprise RAG agent with structured data access:**
 

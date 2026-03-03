@@ -1,4 +1,4 @@
-# Module 4: Memory & RAG
+# Module 5: Memory & RAG
 
 **Time estimate:** 1 week
 **Goal:** Give agents long-term memory and the ability to retrieve relevant information from large knowledge bases.
@@ -15,7 +15,7 @@ By the end of this module you will:
 
 ---
 
-## Unit 4.1: Agent Memory Types
+## Unit 5.1: Agent Memory Types
 
 ### Readings
 
@@ -42,7 +42,7 @@ By the end of this module you will:
 
 ---
 
-## Unit 4.2: RAG (Retrieval-Augmented Generation)
+## Unit 5.2: RAG (Retrieval-Augmented Generation)
 
 ### Readings
 
@@ -74,7 +74,7 @@ Documents → Chunk → Embed → Store (Vector DB) → Query → Retrieve → A
 
 ---
 
-## Unit 4.3: MemGPT and Self-Editing Memory
+## Unit 5.3: MemGPT and Self-Editing Memory
 
 ### Readings
 
@@ -116,7 +116,7 @@ The agent can **edit its own core memory** — it has tools like `core_memory_ap
 
 ---
 
-## Unit 4.4: Context Engineering
+## Unit 5.4: Context Engineering
 
 ### Readings
 
@@ -138,7 +138,7 @@ The agent can **edit its own core memory** — it has tools like `core_memory_ap
 
 ---
 
-## Checkpoint: Module 4
+## Checkpoint: Module 5
 
 **Build a research agent with memory:**
 
@@ -153,7 +153,7 @@ Test it across 3 separate sessions:
 - Session 3: Tell it your interests changed. Verify it updates its long-term memory.
 
 **Stretch goal (advanced):**
-4. **Self-editing memory**: the agent has tools to save/update/delete its own memories (MemGPT pattern from Unit 4.3). Only attempt this after the core requirements work.
+4. **Self-editing memory**: the agent has tools to save/update/delete its own memories (MemGPT pattern from Unit 5.3). Only attempt this after the core requirements work.
 
 - [ ] RAG pipeline works
 - [ ] Session memory works

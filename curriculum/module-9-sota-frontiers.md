@@ -1,4 +1,4 @@
-# Module 8: SOTA & Frontiers
+# Module 9: SOTA & Frontiers
 
 **Time estimate:** Ongoing (this module is a living reading list and advanced project space)
 **Goal:** Understand the cutting edge of agentic AI — advanced architectures, fine-tuning, multimodal agents, computer use, code agents, agent UIs, and responsible AI.
@@ -19,7 +19,7 @@ By the end of this module you will:
 
 ---
 
-## Unit 8.1: Advanced Architectures
+## Unit 9.1: Advanced Architectures
 
 ### Papers
 
@@ -47,9 +47,9 @@ By the end of this module you will:
 
 ---
 
-## Unit 8.2: Fine-Tuning & Distillation for Agents
+## Unit 9.2: Fine-Tuning & Distillation for Agents
 
-The data flywheel (Module 10) generates production data. Fine-tuning uses that data to create smaller, cheaper, faster models that replicate expensive agent behavior.
+The data flywheel (Module 11) generates production data. Fine-tuning uses that data to create smaller, cheaper, faster models that replicate expensive agent behavior.
 
 ### Readings
 
@@ -80,7 +80,7 @@ The data flywheel (Module 10) generates production data. Fine-tuning uses that d
 
 ---
 
-## Unit 8.3: Multimodal Agents
+## Unit 9.3: Multimodal Agents
 
 Modern agents can process images, screenshots, and documents — not just text. All three major providers support vision.
 
@@ -107,7 +107,7 @@ Modern agents can process images, screenshots, and documents — not just text. 
 
 ---
 
-## Unit 8.4: Computer Use Agents
+## Unit 9.4: Computer Use Agents
 
 Agents that can see and interact with a computer screen — clicking, typing, scrolling, reading UI elements.
 
@@ -135,7 +135,7 @@ Agents that can see and interact with a computer screen — clicking, typing, sc
 
 ---
 
-## Unit 8.5: Code Execution Agents
+## Unit 9.5: Code Execution Agents
 
 Agents that write and execute code as their primary mode of action.
 
@@ -164,7 +164,7 @@ Code execution agents **must** run in sandboxed environments. Options:
 
 ---
 
-## Unit 8.6: Building Agent Interfaces
+## Unit 9.6: Building Agent Interfaces
 
 The curriculum has produced CLI tools and REST APIs. Real users need a proper interface.
 
@@ -185,13 +185,13 @@ The curriculum has produced CLI tools and REST APIs. Real users need a proper in
 
 ### Exercises
 
-- [ ] Build a Chainlit interface for your Module 5 multi-agent system. Display: streaming responses, tool call steps (which tool was called, what it returned), and a source panel showing retrieved documents.
+- [ ] Build a Chainlit interface for your Module 6 multi-agent system. Display: streaming responses, tool call steps (which tool was called, what it returned), and a source panel showing retrieved documents.
 - [ ] Add conversation history: users can view and resume past conversations.
 - [ ] Compare: rebuild the same interface in Streamlit. Which is faster to build? Which gives a better user experience?
 
 ---
 
-## Unit 8.7: Ethics & Responsible AI for Agents
+## Unit 9.7: Ethics & Responsible AI for Agents
 
 Agents amplify both the benefits and harms of AI. Autonomous action introduces ethical concerns beyond those of chatbots.
 
@@ -225,7 +225,7 @@ Agents amplify both the benefits and harms of AI. Autonomous action introduces e
 
 ---
 
-## Unit 8.8: Emerging Patterns
+## Unit 9.8: Emerging Patterns
 
 ### Sources to Follow
 
@@ -250,7 +250,7 @@ Agents amplify both the benefits and harms of AI. Autonomous action introduces e
 
 ---
 
-## Unit 8.9: Open Problems
+## Unit 9.9: Open Problems
 
 | Problem | Why It's Hard | Current Best Approach |
 |---------|--------------|----------------------|
@@ -267,7 +267,7 @@ Agents amplify both the benefits and harms of AI. Autonomous action introduces e
 
 ## Capstone Project
 
-**Choose one of these projects to bring together everything from Modules 0-8:**
+**Choose one of these projects to bring together everything from Modules 0-9:**
 
 ### Option A: Deep Research Agent
 Build an agent that, given a research question, autonomously:
@@ -303,7 +303,7 @@ Use: Memory + MCP + multi-agent + multimodal + production deployment + streaming
 
 ---
 
-## Checkpoint: Module 8
+## Checkpoint: Module 9
 
 - [ ] You've read at least LATS and Voyager papers
 - [ ] You've built at least one advanced agent (computer use, code execution, or LATS-style)
