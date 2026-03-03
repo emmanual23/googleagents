@@ -70,6 +70,19 @@ The following gaps were identified via meta-review and addressed:
 | M9 no code exercise | Added code-focused checkpoint (enterprise RAG + SQL + access control) | M9 Checkpoint |
 | M10 disconnected from code | Checkpoint requires adding enterprise features to M9 agent | M10 Checkpoint |
 
+## 2026-27 Watch List
+
+Cross-cutting trends shaping the agentic AI landscape — referenced throughout the module frontier sections:
+
+1. **Reasoning models converging** — all providers merging thinking/reasoning into flagship models; test-time compute scaling replaces "bigger model" as the primary capability lever
+2. **MCP as universal standard** — donated to Linux Foundation AAIF, adopted by OpenAI, Google, Microsoft; 10,000+ community servers
+3. **Open-source parity approaching** — benchmark gap narrowed from 15-20 to ~9 points; Qwen3, Llama 4, DeepSeek-R1, GPT-OSS provide genuine alternatives to commercial APIs
+4. **Agentic coding revolution** — Claude Code (~$2B ARR), Cursor (360K paying), Codex CLI, Gemini CLI, Kiro IDE reshaping software engineering
+5. **Computer use agents maturing** — OSAgent surpassed human baseline on OSWorld (76.26%); hybrid screenshot + accessibility tree approach dominant
+6. **Prompt injection unsolved** — adaptive attacks bypass all published defenses at 90%+ success; defense-in-depth remains the only viable strategy
+7. **EU AI Act enforcement** — August 2, 2026 deadline for high-risk AI compliance; penalties up to EUR 35M or 7% global turnover
+8. **Enterprise adoption accelerating** — Gartner: 40% of enterprise apps with agents by end 2026 (from <5% in 2025); 75% require security/compliance as prerequisites
+
 ## Progress Tracking
 
 Use the checkboxes in each module to track completion. Each module ends with a checkpoint — a mini-project that proves you've internalized the material.

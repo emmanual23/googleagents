@@ -166,3 +166,16 @@ Build a research assistant agent that can answer complex questions by combining 
 - [ ] You've built a 4-tool research agent using function calling
 - [ ] You can explain what makes a tool easy vs hard for an LLM to use
 - [ ] You've read the Toolformer paper and can explain its approach
+
+---
+
+## Frontier & 2026-27 Outlook
+
+The biggest shift in tool use since this module was written is the **Model Context Protocol (MCP)** becoming a universal standard. Originally created by Anthropic, MCP has been adopted by OpenAI, Google, and Microsoft, with over 10,000 community-built MCP servers available. In March 2025, MCP was donated to the Linux Foundation's AI & Data Foundation (AAIF) for vendor-neutral governance. The protocol is evolving: Streamable HTTP transport is replacing the SSE-based transport for remote servers, enabling better scalability and stateless deployments. MCP means you write a tool once and it works across Claude, GPT, Gemini, Cursor, VS Code, and any other MCP-compatible host.
+
+Computer and browser use has matured dramatically. Anthropic's Computer Use tool scores 72.5% on the OSWorld benchmark, while the research system OSAgent reached 76.26% — surpassing the estimated human baseline. Browser automation specifically has been transformed by the Playwright MCP server and the `browser-use` library (89.1% on WebVoyager). The approach is shifting from pure screenshot-based interaction to hybrid methods that combine visual understanding with structured accessibility trees for more reliable element targeting.
+
+### Watch List
+- **MCP spec evolution** — Streamable HTTP replacing SSE transport; auth and discovery improvements in progress
+- **Vision-driven tool calling** — agents that "see" a UI and decide what to click, moving beyond pre-defined tool schemas
+- **Unified tool interfaces** — convergence toward MCP as the single protocol for agent-to-tool communication across all providers

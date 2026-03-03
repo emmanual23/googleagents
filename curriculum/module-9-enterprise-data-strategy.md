@@ -214,3 +214,16 @@ Test with:
 - [ ] Agent routes between RAG and SQL correctly
 - [ ] Agent works with both API and local model
 - [ ] All exercises from Units 9.1-9.5 completed
+
+---
+
+## Frontier & 2026-27 Outlook
+
+Enterprise AI adoption is accelerating but remains unevenly distributed. **Gartner predicts 40% of enterprise apps will have embedded AI agents by end of 2026**, up from less than 5% in 2025 — a dramatic acceleration. McKinsey's 2025 State of AI report found that **88% of enterprises use AI regularly**, but only 23% are scaling agentic AI specifically. The gap between "experimenting with AI" and "deploying agents in production" remains large, driven primarily by data quality issues (IBM reports 25%+ of organizations lose $5M+ annually to poor data quality) and inadequate governance (Gartner predicts 40%+ of agentic AI projects will be canceled by end of 2027 due to escalating costs and unclear business value).
+
+**GraphRAG for enterprise multi-hop reasoning** has matured from a research concept to a production pattern. Knowledge graph integration enables agents to answer questions that require synthesizing information across multiple documents and data sources — the Sequeda et al. study showed knowledge graph-backed QA jumping from 16% to 54% accuracy on enterprise databases. Open-source models are becoming viable for enterprise deployment: GPT-OSS runs on a single 80GB GPU, Qwen3.5-9B runs on consumer laptops, and DeepSeek-R1 offers frontier reasoning under an MIT license. For enterprises with data residency requirements or air-gapped environments, the open-source ecosystem now provides genuine alternatives to commercial APIs.
+
+### Watch List
+- **Enterprise RAG evolution** — from simple retrieve-generate to agentic RAG with GraphRAG, dynamic query refinement, and access-controlled multi-source retrieval
+- **Open-source model deployment** — regulated industries (finance, healthcare, government) are evaluating open-source models for on-premise agent deployments where data cannot leave the network
+- **Data quality as the bottleneck** — the primary blocker for enterprise agent success is not model capability but data accessibility, quality, and governance

@@ -141,3 +141,17 @@ Write a CLI chatbot that:
 5. Uses at least one prompt engineering technique (e.g., a system prompt with role + structured output instructions)
 
 This should be ~100-150 lines of Python. No frameworks needed — just the raw SDKs.
+
+---
+
+## Frontier & 2026-27 Outlook
+
+The model landscape has fragmented and accelerated since early 2025. OpenAI shipped GPT-5 and GPT-5.2, Anthropic released Claude 4.5 and Claude 4.6 (Opus, Sonnet, Haiku tiers), Google launched Gemini 2.5 Pro and 3.1 Pro, Meta released Llama 4 (Scout and Maverick variants with mixture-of-experts), DeepSeek published DeepSeek-R1 under an MIT license ([arxiv.org/abs/2501.12948](https://arxiv.org/abs/2501.12948)), and Alibaba shipped Qwen3 under Apache 2.0. The most significant paradigm shift is **reasoning models** — OpenAI's o-series, Claude's extended thinking, and Gemini's thinking mode all use test-time compute scaling to "think longer" on hard problems, trading latency and cost for dramatically improved accuracy on math, code, and multi-step reasoning. This represents a move from "bigger model" scaling to "more inference compute" scaling.
+
+Cost deflation has been dramatic: API pricing dropped roughly 80% from 2024 to 2026, with a 1000x range between the cheapest models (Gemini 2.0 Flash at ~$0.01/MTok) and the most expensive (o3 at ~$10/MTok output). Context windows have expanded to extraordinary lengths — Llama 4 Scout supports 10M tokens, Gemini handles 2M, and Claude and GPT support 1M — though effective use of ultra-long contexts remains an active research area. The open-source gap has narrowed from 15-20 benchmark points to roughly 9 points, with models like Qwen3 and DeepSeek-R1 matching or exceeding GPT-4-class performance on many tasks.
+
+### Watch List
+- **Reasoning model convergence** — all major providers are merging thinking/reasoning capabilities into their flagship models rather than offering them as separate products
+- **Cost deflation** — pricing continues to drop; expect another 50%+ reduction by end of 2027
+- **Open-source parity** — Qwen3, Llama 4, DeepSeek-R1, and the newly released GPT-OSS are closing the gap with commercial models rapidly
+- **Context window utilization** — 1M+ token windows are available but best practices for using them effectively are still emerging

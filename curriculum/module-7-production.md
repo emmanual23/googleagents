@@ -335,3 +335,16 @@ Deploy your best agent as a REST API:
 - [ ] Your agent is deployed as a streaming REST API (at least locally)
 
 **Self-test:** Kill a tool mid-execution. Does your agent recover gracefully? Check the trace in Langfuse — can you see exactly what happened, which prompt version was used, and what it cost?
+
+---
+
+## Frontier & 2026-27 Outlook
+
+The observability landscape consolidated significantly when **Langfuse was acquired by ClickHouse** in January 2026 and fully open-sourced. This gives the most popular open-source LLM observability platform the backing of a production-grade analytics database, making self-hosted tracing viable at enterprise scale. The broader trend is observability tools converging on OpenTelemetry standards, enabling agent traces to flow into existing enterprise monitoring infrastructure alongside traditional application telemetry.
+
+**Prompt injection remains the most critical unsolved security problem** in production agents. The paper "The Attacker Moves Second" demonstrated that adaptive attacks bypass all 12 published defenses at 90%+ success rates. The most promising mitigation, **SecAlign** (alignment-based training against injection), reduces attack success to roughly 8% but requires model fine-tuning. The practical takeaway is unchanged: **defense-in-depth** — layering input sanitization, privilege separation, instruction hierarchy, output filtering, and human-in-the-loop — remains the only viable production strategy. Cloud platforms have responded with managed agent hosting: AWS Bedrock AgentCore, Azure AI Foundry Agent Service, and Google Vertex AI Agent Engine all offer built-in guardrails, identity management, and observability. On cost optimization, Anthropic's prompt caching delivers up to 90% savings on repeated system prompts, and NVIDIA's data flywheel blueprint showed that a fine-tuned 8B model can replace a 70B model at 96% accuracy with 98.6% cost reduction.
+
+### Watch List
+- **Prompt injection arms race** — adaptive attacks vs alignment-based defenses; expect this to intensify as agents handle more sensitive data
+- **Agent hosting platform consolidation** — AWS, Azure, and GCP are all building managed agent platforms; expect rapid feature parity
+- **Agentic plan caching** — caching not just prompts but entire agent execution plans for common query patterns, reducing both cost and latency

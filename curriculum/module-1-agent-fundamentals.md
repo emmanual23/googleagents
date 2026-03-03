@@ -146,3 +146,16 @@ Build a ReAct agent in ~200 lines of Python with **no frameworks**. Use any LLM 
 - [ ] Summarize at least 3 of the 4 papers from Unit 1.2
 
 **Self-test:** Give your agent a question it hasn't seen that requires multiple tool calls. Does it solve it? If not, debug the system prompt or parsing logic.
+
+---
+
+## Frontier & 2026-27 Outlook
+
+Agent architectures have moved well beyond the ReAct pattern taught in this module. Researchers have introduced Reflexion with verbal reinforcement learning ([arxiv.org/abs/2303.11366](https://arxiv.org/abs/2303.11366)), Graph-of-Thoughts for non-linear reasoning ([arxiv.org/abs/2308.09687](https://arxiv.org/abs/2308.09687)), CoAct for global planning with local execution, and ReAcTree for parallel reasoning branches. Two comprehensive surveys now map the full landscape: "A Survey on LLM-Based Agents" ([arxiv.org/abs/2510.25445](https://arxiv.org/abs/2510.25445)) and "Agent AI: A Survey on Large Language Model-Based Agents" ([arxiv.org/abs/2601.01743](https://arxiv.org/abs/2601.01743)). The key shift is from single-loop agents to architectures that plan, reflect, backtrack, and learn from failure within a single task.
+
+On the product side, every major provider now ships agent products: OpenAI's Deep Research for autonomous multi-step web research plus Operator and Agent Mode for agentic coding; Anthropic's Computer Use (scoring 72.5% on the OSWorld benchmark) plus Claude Code (reportedly approaching ~$2B ARR); and Google's Project Mariner for browser-based agent tasks. Test-time compute scaling — where agents spend more inference compute on harder problems — has emerged as a key capability that separates modern agents from the simple ReAct loops of 2023-2024.
+
+### Watch List
+- **Long-horizon reasoning** — agents that can maintain coherent plans across 50+ steps remain an open challenge
+- **Autonomous coding agents** — Claude Code, Cursor, Codex CLI, and Gemini CLI are reshaping how software is written
+- **Test-time compute scaling** — reasoning models that "think harder" on difficult problems are becoming the default agent backbone

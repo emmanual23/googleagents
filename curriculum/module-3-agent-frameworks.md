@@ -169,3 +169,16 @@ Most agent frameworks (LangGraph, CrewAI, smolagents) support OpenAI-compatible 
 - [ ] You have a written framework comparison for your own reference
 
 **Self-test:** If someone asked you "should I use LangGraph or CrewAI for X?", can you give a nuanced answer?
+
+---
+
+## Frontier & 2026-27 Outlook
+
+The framework landscape has consolidated around graph-based execution while simultaneously fragmenting with new provider-specific SDKs. LangGraph reached v1.0 GA in October 2025 and is used in production by Uber, LinkedIn, and Klarna for complex stateful agent workflows. Meanwhile, every major provider launched their own agent SDK: OpenAI Agents SDK (lightweight: Agents, Handoffs, Guardrails, Tracing), Google ADK (model-agnostic with MCP and A2A support), and Anthropic Claude Agent SDK (agentic loop with built-in MCP integration). Microsoft merged AutoGen and Semantic Kernel into a unified Agent Framework. The trend is clear: graph-based state machines for complex workflows, provider SDKs for simpler single-agent tasks.
+
+The open-source model ecosystem has exploded. Llama 4 introduced mixture-of-experts (MoE) architecture with the Scout variant supporting 10M token context. Qwen3 shipped under Apache 2.0 with strong function-calling capabilities. DeepSeek-R1 demonstrated that pure reinforcement learning can produce frontier-quality reasoning under an MIT license. Mistral 3 and Gemma 3 round out the mid-tier. OpenAI released GPT-OSS, their first open-weights model, which runs on a single 80GB GPU. The benchmark gap between open-source and commercial models has narrowed from 15-20 points to roughly 9 points, making local deployment viable for an increasing range of agent use cases.
+
+### Watch List
+- **Framework convergence** — all major frameworks are converging on graph-based execution with nodes, edges, and conditional routing
+- **"Agentic mesh" pattern** — agents as microservices in a mesh, communicating via MCP/A2A rather than monolithic multi-agent systems
+- **Open-source model parity** — the gap continues to narrow; by 2027, open-source models may match commercial quality for most agent tasks

@@ -159,3 +159,16 @@ Test it across 3 separate sessions:
 - [ ] Session memory works
 - [ ] Long-term memory persists across sessions
 - [ ] (Stretch) Agent can update its own memories
+
+---
+
+## Frontier & 2026-27 Outlook
+
+RAG has evolved from a simple retrieve-then-generate pipeline into a family of sophisticated architectures. **GraphRAG** uses knowledge graphs to enable multi-hop reasoning over entities and relationships — Microsoft's implementation showed significant improvements on global queries that require synthesizing information across many documents. **LazyGraphRAG** reduced the indexing cost to 0.1% of full GraphRAG while maintaining quality on most query types. **LinearRAG** (accepted at ICLR 2026) introduced a training-free approach that maintains retrieval quality without the computational overhead of graph construction. **Agentic RAG** represents the biggest paradigm shift: instead of a fixed retrieve-then-generate pipeline, agents dynamically decide when to retrieve, what query to use, whether to refine the query, and when they have enough information — turning RAG from a static pipeline into an iterative, agent-driven process.
+
+On the memory side, **Mem0** has emerged as a purpose-built memory layer for AI agents, demonstrating 26% higher accuracy than OpenAI's built-in memory and 91% lower latency. Mem0 uses a dual architecture combining flat key-value storage for fast lookups with a graph-based memory layer for relationship reasoning. The long context vs RAG debate has largely been settled as "complementary, not competing": benchmarks show RAG is 8-82x cheaper than stuffing everything into a long context window, produces better citations, and handles dynamic corpora where documents change. Long context excels at tasks requiring holistic understanding of a single large document.
+
+### Watch List
+- **GraphRAG cost reduction** — LazyGraphRAG and similar approaches are making graph-based retrieval practical for production use
+- **Agentic RAG patterns** — agents that iteratively refine retrieval queries and decide when they have enough context
+- **Graph-based memory** — Mem0 and similar systems using knowledge graphs for persistent agent memory, enabling relationship reasoning across sessions

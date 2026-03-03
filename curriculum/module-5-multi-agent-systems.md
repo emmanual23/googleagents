@@ -193,3 +193,16 @@ The orchestration patterns in Unit 5.2 describe *workflow shapes*. This unit cov
 - [ ] You understand MCP (agent-to-tool) vs A2A (agent-to-agent)
 - [ ] Your code review team works end-to-end
 - [ ] You've read the GitHub blog post on why multi-agent workflows fail and can list 3 common failure modes
+
+---
+
+## Frontier & 2026-27 Outlook
+
+The multi-agent protocol landscape is crystallizing around two standards. **MCP** (Model Context Protocol) has become the de facto universal protocol for connecting agents to tools — adopted by OpenAI, Google, Microsoft, and 10,000+ community servers, now governed by the Linux Foundation's AAIF. **A2A** (Agent-to-Agent protocol), created by Google and backed by 150+ organizations, reached v0.3 but momentum has stalled relative to MCP — many teams are using MCP for both tool integration and lightweight agent-to-agent communication. In December 2025, Anthropic introduced **Agent Skills** as an open standard for declaring agent capabilities, adopted by Microsoft, OpenAI, Atlassian, and Figma. Together, these standards are enabling a vision where specialized agents discover each other, negotiate capabilities, and collaborate without vendor lock-in.
+
+Enterprise multi-agent adoption has accelerated rapidly. A January 2026 survey found 67% of large enterprises running autonomous agents in production. Microsoft merged AutoGen and Semantic Kernel into a unified Agent Framework for multi-agent orchestration. The "agentic mesh" pattern — where agents are deployed as microservices that discover and communicate with each other dynamically — is gaining traction as an alternative to monolithic multi-agent systems. The Databricks 2026 State of AI Agents report found 327% growth in multi-agent workflows year-over-year.
+
+### Watch List
+- **MCP vs A2A convergence** — whether these protocols merge or specialize (MCP for tools, A2A for agent-to-agent) remains an open question
+- **Agent Skills standard** — early adoption is promising; watch for broader ecosystem support and tooling
+- **Multi-agent orchestration platforms** — cloud providers are building managed platforms for deploying and monitoring multi-agent systems at scale

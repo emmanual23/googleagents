@@ -188,3 +188,16 @@ Evaluation tells you *how good* the agent is. Debugging tells you *why it fails*
 - [ ] You've run your eval harness and have a baseline score for your best agent
 
 **Key insight to internalize:** Eval is not a one-time step. It's the feedback loop that drives all improvement. Build eval first, then iterate on the agent.
+
+---
+
+## Frontier & 2026-27 Outlook
+
+Agent benchmarks have pushed into new territory. On **SWE-bench Verified**, the top score is 80.9% by Claude Opus 4.5 (as of early 2026), meaning frontier agents can solve ~4 out of 5 real GitHub issues autonomously. However, **SWE-bench Pro** — a harder variant requiring understanding of large codebases — tops out at roughly 23%, showing how far agents still have to go on complex software engineering. New benchmarks are proliferating: **Terminal-Bench** tests command-line proficiency, **DPAI Arena** offers head-to-head agent comparison, **Context-Bench** evaluates how well agents use long context, **SWE-PolyBench** extends coding evaluation across multiple languages, and **GAE** (General Agent Evaluation) attempts to measure general-purpose agent capability.
+
+On the safety and security evaluation front, OWASP published the **"Top 10 for Agentic Applications"** in December 2025, identifying agent-specific security risks including excessive agency, insecure tool use, and privilege escalation. This complements the existing OWASP Top 10 for LLM Applications and provides the first industry-standard security evaluation taxonomy specifically for agents. Enterprise evaluation gaps remain significant: most benchmarks still focus on final-answer accuracy rather than multistep granularity, cost-efficiency, safety/compliance, or real-time adaptive evaluation against evolving threats.
+
+### Watch List
+- **SWE-bench Pro scores** — the gap between Verified (~80%) and Pro (~23%) indicates where the next wave of agent improvement will focus
+- **Domain-specific benchmarks** — expect benchmarks for legal, medical, financial, and other regulated domains to emerge in 2026-2027
+- **Safety evaluation standards** — OWASP agentic top 10 is the starting point; regulatory bodies will likely mandate specific agent safety evaluations

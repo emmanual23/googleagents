@@ -262,3 +262,16 @@ Ground every recommendation in a source from this module.
 - [ ] Cost model is quantified
 - [ ] Risks are specific, not generic
 - [ ] Module 9 agent has 2+ enterprise operational features added
+
+---
+
+## Frontier & 2026-27 Outlook
+
+The regulatory landscape for agentic AI is entering a critical enforcement phase. The **EU AI Act** reaches full enforcement for high-risk AI systems on **August 2, 2026**, with penalties up to EUR 35 million or 7% of global annual turnover. Any enterprise deploying agents that make consequential decisions (hiring, credit, healthcare triage) must classify these as high-risk and comply with transparency, human oversight, and documentation requirements. Meanwhile, **Singapore launched the world's first agentic AI governance framework** at the World Economic Forum 2026 annual meeting, providing a model other countries may follow. The **OWASP Top 10 for Agentic Applications** (December 2025) established "least agency" as a core principle — agents should request only the minimum permissions needed for each task.
+
+Cloud platform competition for agent hosting has intensified. **AWS Bedrock AgentCore** offers managed agent infrastructure at $0.0895/vCPU-hr. **Azure AI Foundry Agent Service** provides agent hosting with no compute surcharge beyond the base model cost. **Google Vertex AI Agent Engine** prices at $0.00994/vCPU-hr for managed agents. All three provide built-in identity management, guardrails, observability, and multi-tenant isolation — though feature parity varies. The **NVIDIA data flywheel** pattern has been open-sourced as a blueprint on GitHub, and NVIDIA's partnership with Galileo provides agent de-risking capabilities (hallucination detection, compliance monitoring). A Cleanlab survey of 95 practitioners with agents in production found that **75% of companies require security, compliance, and auditability** as prerequisites before deploying agents — not nice-to-haves, but blocking requirements.
+
+### Watch List
+- **EU AI Act enforcement impact** — August 2026 is the deadline; enterprises deploying high-risk agent systems need compliance infrastructure in place now
+- **Agentic AI governance frameworks** — following Singapore's lead, expect multiple countries to publish agent-specific governance guidelines in 2026-2027
+- **Agent marketplace platforms** — cloud providers are building marketplaces for pre-built agents with compliance certifications, similar to how app stores work for mobile
