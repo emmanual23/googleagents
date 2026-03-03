@@ -29,7 +29,7 @@ A structured, vendor-neutral learning path from zero to state-of-the-art in agen
 | [7](module-7-production.md) | Production & Deployment | 1-2 weeks | Streaming, secure, versioned agent as REST API |
 | [8](module-8-sota-frontiers.md) | SOTA & Frontiers | Ongoing | Fine-tuning, multimodal, computer use, agent UIs, ethics |
 | [9](module-9-enterprise-data-strategy.md) | Enterprise Data & Knowledge Architecture | 1 week | Enterprise RAG with SQL, access control + local models |
-| [10](module-10-enterprise-operations.md) | Enterprise Operations & Governance | 1-2 weeks | Security, compliance, multi-tenant, data flywheel + strategy doc |
+| [10](module-10-enterprise-operations.md) | Enterprise Operations & Governance | 1-2 weeks | Security, compliance, multi-tenant, data flywheel, regulated industries + strategy doc |
 
 ## Guiding Principles
 
