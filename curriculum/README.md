@@ -4,7 +4,7 @@ A structured, vendor-neutral learning path from zero to state-of-the-art in agen
 
 ## How This Curriculum Works
 
-- **12 modules**, each in its own file — work through them in order
+- **13 modules**, each in its own file — work through them in order
 - Each module has: learning objectives, readings, hands-on exercises, and checkpoints
 - Estimated total: **12-16 weeks** at ~10 hrs/week (adjust to your pace)
 - All readings and resources are free unless marked otherwise
@@ -31,6 +31,7 @@ A structured, vendor-neutral learning path from zero to state-of-the-art in agen
 | [9](module-9-sota-frontiers.md) | SOTA & Frontiers | Ongoing | Fine-tuning, multimodal, computer use, agent UIs, ethics |
 | [10](module-10-enterprise-data-strategy.md) | Enterprise Data & Knowledge Architecture | 1 week | Enterprise RAG with SQL, access control + local models |
 | [11](module-11-enterprise-operations.md) | Enterprise Operations & Governance | 1-2 weeks | Security, compliance, multi-tenant, data flywheel, regulated industries + strategy doc |
+| [12](module-12-ecosystem-comparison.md) | Ecosystem Comparison | 1 week | Provider comparison report: models, platforms, standards, pricing across 6 ecosystems |
 
 ## Guiding Principles
 
